@@ -1,151 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Battery - Personal Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 3px solid #77aaff;
-        }
-        .content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #77aaff;
-            padding-bottom: 10px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #e4e4e4;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .contact-info a {
-            color: #77aaff;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .news {
-            margin-top: 20px;
-        }
-        .news ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .news ul li {
-            background: none;
-            padding: 5px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuheng Kan's Academic Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #444;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Battery</h1>
-            <!-- Upload your photo here -->
-            <img src="utils/photo.jpg" alt="Battery's Photo">
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="content">
-            <h2>About Me</h2>
-            <p>I am Battery, currently serving as the Director of the Simulation R&D Center at SenseTime and the Principal Investigator (PI) in Urban Computing at the Shanghai AI Lab. With extensive experience in intelligent driving, AI technology R&D, and productization, I have led teams to successfully deliver multiple billion-dollar projects.</p>
-            <p>I hold a Ph.D. in Road and Traffic Engineering from Zhejiang University, jointly trained with UC Berkeley, and have conducted visiting research at the Technion - Israel Institute of Technology. My research interests include intelligent driving systems, decision-making and planning control modules, end-to-end autonomous driving technologies, and the application of generative AI technologies.</p>
-        </div>
-
-        <div class="content">
-            <h2>News</h2>
-            <div class="news">
-                <ul>
-                    <li>[2024] My team has published 19 papers at top conferences such as NeurIPS, CVPR, TMLR, ICMI, and ECCV.</li>
-                    <li>[2024] Our AIGC product, MiaoHua, gained over 5,000,000 users within 9 days of launch, with a DAU exceeding 30,000.</li>
-                    <li>[2024] We were awarded the First Prize in Technological Progress (English Award).</li>
-                    <li>[2024] Our OpenDI Lab achieved over 21,000 stars on GitHub.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="content">
-            <h2>Work Experience</h2>
-            <ul>
-                <li><strong>2021-2024</strong> SenseTime, Director of Simulation R&D Center, R&D Director</li>
-                <li><strong>2022-2023</strong> SenseTime, General Manager of V2X Product Line</li>
-                <li><strong>2019-2021</strong> SenseTime, Deputy Head of Traffic Computing R&D Department</li>
-                <li><strong>2021-2024</strong> Shanghai AI Lab, Principal Investigator (PI) in Urban Computing (Part-time Consultant)</li>
-                <li><strong>2021-Present</strong> Beihang University, School of Transportation Science and Engineering, Industry Mentor</li>
-            </ul>
-        </div>
-
-        <div class="content">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>2013-2019</strong> Zhejiang University, Ph.D. in Road and Traffic Engineering</li>
-                <li><strong>2009-2013</strong> Zhejiang Normal University, Bachelor's in Transportation Engineering (Top 0.5% of the university)</li>
-                <li><strong>2017-2018</strong> UC Berkeley, Joint Ph.D. Program (State-sponsored)</li>
-                <li><strong>2014-2014</strong> Technion - Israel Institute of Technology, Visiting Scholar (Fully funded by the Israeli government)</li>
-            </ul>
-        </div>
-
-        <div class="content">
-            <h2>Skills</h2>
-            <ul>
-                <li>Proficient in Python/C++</li>
-                <li>Familiar with Docker, Kubernetes, and computer network communication technologies</li>
-                <li>Experienced with ROS/Cyber middleware and Git/Gerrit development tools</li>
-            </ul>
-        </div>
-
-        <div class="contact-info">
-            <p>Phone: <a href="tel:+8618916949712">+86 18916949712</a></p>
-            <p>Email: <a href="mailto:InsightEcho@163.com">InsightEcho@163.com</a></p>
-            <p>Google Scholar: <a href="https://scholar.google.com">Google Scholar</a></p>
-        </div>
-    </div>
+  <header>
+    <h1>Yuheng Kan's Academic Page</h1>
+    <img id="profile-pic" src="photo.png" alt="Profile Picture">
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Email</a>
+  </nav>
+  <section>
+    <h2>Personal Information</h2>
+    <p>
+      Name: Yuheng Kan<br>
+      Position: Director at SenseTime<br>
+      Wechat: kanyuheng<br>
+      Email: kanyuheng@163.com<br>
+      <a href="https://scholar.google.com/citations?user=EskFze8AAAAJ&hl=zh-TW">Google Scholar Link</a>
+    </p>
+  </section>
+  <section>
+    <h2>Introduction</h2>
+    <p>
+      I am a highly accomplished professional with a Doctor of Engineering degree from the joint training program of Zhejiang University and UC Berkeley. I have been recognized as a top talent in various programs, such as the Shanghai Oriental Elite Top-notch Program, Shanghai Pujiang Talent Program, and a core talent of key enterprises in Shanghai. I am also a senior engineer specialized in AI.
+      <br>
+      With extensive experience in the fields of intelligent connected and autonomous driving as well as AI, I have been engaged in research and development in these areas for many years. I have in-depth knowledge of intelligent driving systems, decision-making, planning, and control modules, and am proficient in end-to-end intelligent driving technologies. I also have a profound understanding of intelligent driving simulation systems. In the AI field, I have actively explored and applied both traditional AI technologies like CNN, GCN, and reinforcement learning, and emerging generative AI technologies. I have rich experience in promoting the productization of AI technologies and have a deep understanding of the market needs and technological trends.
+    </p>
+  </section>
+  <section>
+    <h2>Publications</h2>
+    <h3>Generative AI</h3>
+    <ul>
+      <li>LLM-assisted light: Leveraging large language model capabilities for human-mimetic traffic signal control in complex urban environments (arXiv preprint arXiv:2403.08337, 2024)</li>
+      <li>SMART: Scalable Multi-agent Real-time Simulation via Next-token Prediction (arXiv preprint arXiv:2405.15677, 2024)</li>
+      <li>Traffic Signal Cycle Control with Centralized Critic and Decentralized Actors under Varying Intervention Frequencies (arXiv preprint arXiv:2406.08248, 2024)</li>
+    </ul>
+    <h3>Traditional AI</h3>
+    <ul>
+      <li>Local ramp metering with distant downstream bottlenecks: A comparative study (Transportation Research Part C: Emerging Technologies 62, 149-170, 2016)</li>
+      <li>Simulation-based optimization of large-scale dedicated bus lanes allocation: Using efficient machine learning models as surrogates (Transportation Research Part C: Emerging Technologies 143, 103827, 2022)</li>
+      <li>A Deep Learning Engine Power Model for Estimating the Fuel Consumption of Heavy-Duty Trucks (2020 6th IEEE International Energy Conference (ENERGYCon), 182-187, 2020)</li>
+      <li>A novel approach to estimating missing pairs of on/off ramp flows (IEEE Transactions on Intelligent Transportation Systems 22 (2), 1287-1305, 2020)</li>
+      <li>UniTSA: A universal reinforcement learning framework for V2X traffic signal control (IEEE Transactions on Vehicular Technology, 2024)</li>
+      <li>ADLight: A universal approach of traffic signal control with augmented data using reinforcement learning (arXiv preprint arXiv:2210.13378, 2022)</li>
+      <li>Adaptive coordinated traffic control for arterial intersections based on reinforcement learning (2021 IEEE International Intelligent Transportation Systems Conference (ITSC…, 2021)</li>
+      <li>Turning traffic volume imputation for persistent missing patterns with GNNs (Applied Intelligence 53 (1), 491-508, 2023)</li>
+      <li>Development of a novel engine power model to estimate heavy-duty truck fuel consumption (Transportmetrica A: Transport Science 18 (3), 1656-1678, 2022)</li>
+      <li>Off-Ramp Blockage on Freeways (IFAC-PapersOnLine 49 (3), 159-164, 2016)</li>
+      <li>Performance Evaluation of Mechanical Properties of Polymer-Modified Binders and Friction Course (Airfield and Highway Pavement 2013: Sustainable and Efficient Pavements…, 2013)</li>
+      <li>Reinforcement learning-based traffic signal control using delayed observations for V2X (ICC 2023-IEEE International Conference on Communications, 4020-4025, 2023)</li>
+      <td>
+        <li>Method and device for determining road operation condition, and storage medium (US Patent App. 17/648,931, 2022)</li>
+      </td>
+      <li>A Congestion Detection Framework based on Vehicle-Counter CNN and Self-Learning Critical Density Approach (2021 IEEE International Intelligent Transportation Systems Conference (ITSC…, 2021)</li>
+    </ul>
+  </section>
+  <footer>
+    &copy; 2024 Yuheng Kan's Academic Page. All rights reserved.
+  </footer>
+  <script>
+    function setProfilePic(url) {
+      var img = document.getElementById('profile-pic');
+      img.src = url;
+    }
+  </script>
 </body>
+
 </html>
