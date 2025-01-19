@@ -15,8 +15,10 @@
     header {
       background-color: #333;
       color: white;
-      text-align: center;
       padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
 
     nav {
@@ -45,30 +47,41 @@
       bottom: 0;
       width: 100%;
     }
+
+    h2 {
+      color: #007bff;
+    }
+
+  .publication-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+    }
+
+  .publication-item:last-child {
+      border-bottom: none;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Yuheng Kan's Academic Page</h1>
-    <img id="profile-pic" src="photo.png" alt="Profile Picture">
+    <img id="profile-pic" src="photo.png" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
+    <div>
+      <p>
+        Name: Yuheng Kan<br>
+        Position: Director at SenseTime<br>
+        Email: kanyuheng@163.com<br>
+        <a href="https://scholar.google.com/citations?user=EskFze8AAAAJ&hl=zh-TW">Google Scholar Link</a>
+      </p>
+    </div>
   </header>
   <nav>
     <a href="#">Home</a>
     <a href="#">Email</a>
   </nav>
   <section>
-    <h2>Personal Information</h2>
-    <p>
-      Name: Yuheng Kan<br>
-      Position: Director at SenseTime<br>
-      Wechat: kanyuheng<br>
-      Email: kanyuheng@163.com<br>
-      <a href="https://scholar.google.com/citations?user=EskFze8AAAAJ&hl=zh-TW">Google Scholar Link</a>
-    </p>
-  </section>
-  <section>
-    <h2>Introduction</h2>
+    <h2>About me</h2>
     <p>
       I am a highly accomplished professional with a Doctor of Engineering degree from the joint training program of Zhejiang University and UC Berkeley. I have been recognized as a top talent in various programs, such as the Shanghai Oriental Elite Top-notch Program, Shanghai Pujiang Talent Program, and a core talent of key enterprises in Shanghai. I am also a senior engineer specialized in AI.
       <br>
@@ -77,31 +90,33 @@
   </section>
   <section>
     <h2>Publications</h2>
-    <h3>Generative AI</h3>
-    <ul>
-      <li>LLM-assisted light: Leveraging large language model capabilities for human-mimetic traffic signal control in complex urban environments (arXiv preprint arXiv:2403.08337, 2024)</li>
-      <li>SMART: Scalable Multi-agent Real-time Simulation via Next-token Prediction (arXiv preprint arXiv:2405.15677, 2024)</li>
-      <li>Traffic Signal Cycle Control with Centralized Critic and Decentralized Actors under Varying Intervention Frequencies (arXiv preprint arXiv:2406.08248, 2024)</li>
-    </ul>
-    <h3>Traditional AI</h3>
-    <ul>
-      <li>Local ramp metering with distant downstream bottlenecks: A comparative study (Transportation Research Part C: Emerging Technologies 62, 149-170, 2016)</li>
-      <li>Simulation-based optimization of large-scale dedicated bus lanes allocation: Using efficient machine learning models as surrogates (Transportation Research Part C: Emerging Technologies 143, 103827, 2022)</li>
-      <li>A Deep Learning Engine Power Model for Estimating the Fuel Consumption of Heavy-Duty Trucks (2020 6th IEEE International Energy Conference (ENERGYCon), 182-187, 2020)</li>
-      <li>A novel approach to estimating missing pairs of on/off ramp flows (IEEE Transactions on Intelligent Transportation Systems 22 (2), 1287-1305, 2020)</li>
-      <li>UniTSA: A universal reinforcement learning framework for V2X traffic signal control (IEEE Transactions on Vehicular Technology, 2024)</li>
-      <li>ADLight: A universal approach of traffic signal control with augmented data using reinforcement learning (arXiv preprint arXiv:2210.13378, 2022)</li>
-      <li>Adaptive coordinated traffic control for arterial intersections based on reinforcement learning (2021 IEEE International Intelligent Transportation Systems Conference (ITSC…, 2021)</li>
-      <li>Turning traffic volume imputation for persistent missing patterns with GNNs (Applied Intelligence 53 (1), 491-508, 2023)</li>
-      <li>Development of a novel engine power model to estimate heavy-duty truck fuel consumption (Transportmetrica A: Transport Science 18 (3), 1656-1678, 2022)</li>
-      <li>Off-Ramp Blockage on Freeways (IFAC-PapersOnLine 49 (3), 159-164, 2016)</li>
-      <li>Performance Evaluation of Mechanical Properties of Polymer-Modified Binders and Friction Course (Airfield and Highway Pavement 2013: Sustainable and Efficient Pavements…, 2013)</li>
-      <li>Reinforcement learning-based traffic signal control using delayed observations for V2X (ICC 2023-IEEE International Conference on Communications, 4020-4025, 2023)</li>
-      <td>
-        <li>Method and device for determining road operation condition, and storage medium (US Patent App. 17/648,931, 2022)</li>
-      </td>
-      <li>A Congestion Detection Framework based on Vehicle-Counter CNN and Self-Learning Critical Density Approach (2021 IEEE International Intelligent Transportation Systems Conference (ITSC…, 2021)</li>
-    </ul>
+    <div class="publication-item">
+      <h3>Generative AI</h3>
+      <ul>
+        <li>LLM-assisted light: Leveraging large language model capabilities for human-mimetic traffic signal control in complex urban environments <i>(arXiv preprint arXiv:2403.08337, 2024)</i></li>
+        <li>SMART: Scalable Multi-agent Real-time Simulation via Next-token Prediction <i>(arXiv preprint arXiv:2405.15677, 2024)</i></li>
+        <li>Traffic Signal Cycle Control with Centralized Critic and Decentralized Actors under Varying Intervention Frequencies <i>(arXiv preprint arXiv:2406.08248, 2024)</i></li>
+      </ul>
+    </div>
+    <div class="publication-item">
+      <h3>Traditional AI</h3>
+      <ul>
+        <li>Local ramp metering with distant downstream bottlenecks: A comparative study <i>(Transportation Research Part C: Emerging Technologies 62, 149-170, 2016)</i></li>
+        <li>Simulation-based optimization of large-scale dedicated bus lanes allocation: Using efficient machine learning models as surrogates <i>(Transportation Research Part C: Emerging Technologies 143, 103827, 2022)</i></li>
+        <li>A Deep Learning Engine Power Model for Estimating the Fuel Consumption of Heavy-Duty Trucks <i>(2020 6th IEEE International Energy Conference (ENERGYCon), 182-187, 2020)</i></li>
+        <li>A novel approach to estimating missing pairs of on/off ramp flows <i>(IEEE Transactions on Intelligent Transportation Systems 22 (2), 1287-1305, 2020)</i></li>
+        <li>UniTSA: A universal reinforcement learning framework for V2X traffic signal control <i>(IEEE Transactions on Vehicular Technology, 2024)</i></li>
+        <li>ADLight: A universal approach of traffic signal control with augmented data using reinforcement learning <i>(arXiv preprint arXiv:2210.13378, 2022)</i></li>
+        <li>Adaptive coordinated traffic control for arterial intersections based on reinforcement learning <i>(2021 IEEE International Intelligent Transportation Systems Conference (ITSC…, 2021)</i></li>
+        <li>Turning traffic volume imputation for persistent missing patterns with GNNs <i>(Applied Intelligence 53 (1), 491-508, 2023)</i></li>
+        <li>Development of a novel engine power model to estimate heavy-duty truck fuel consumption <i>(Transportmetrica A: Transport Science 18 (3), 1656-1678, 2022)</i></li>
+        <li>Off-Ramp Blockage on Freeways <i>(IFAC-PapersOnLine 49 (3), 159-164, 2016)</i></li>
+        <li>Performance Evaluation of Mechanical Properties of Polymer-Modified Binders and Friction Course <i>(Airfield and Highway Pavement 2013: Sustainable and Efficient Pavements…, 2013)</i></li>
+        <li>Reinforcement learning-based traffic signal control using delayed observations for V2X <i>(ICC 2023-IEEE International Conference on Communications, 4020-4025, 2023)</i></li>
+        <li>Method and device for determining road operation condition, and storage medium <i>(US Patent App. 17/648,931, 2022)</i></li>
+        <li>A Congestion Detection Framework based on Vehicle-Counter CNN and Self-Learning Critical Density Approach <i>(2021 IEEE International Intelligent Transportation Systems Conference (ITSC…, 2021)</i></li>
+      </ul>
+    </div>
   </section>
   <footer>
     &copy; 2024 Yuheng Kan's Academic Page. All rights reserved.
