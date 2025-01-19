@@ -63,9 +63,40 @@
     }
   </style>
 </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+      .profile-container {
+          display: flex;
+          align-items: center;
+      }
+      #profile-pic {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          margin-right: 50px;
+      }
+      .profile-info {
+          text-align: left;
+      }
+  </style>
+</head>
 
 <body>
-  <header>
+  <div class="profile-container">
+    <img id="profile-pic" src="photo.png" alt="Profile Picture">
+    <div class="profile-info">
+        <p>
+            Dr. Yuheng Kan<br>
+            Director at SenseTime<br>
+            kanyuheng@163.com<br>
+            <a href="https://scholar.google.com/citations?user=EskFze8AAAAJ&hl=zh-TW">Google Scholar Link</a>
+        </p>
+    </div>
+  </div>
+  <!-- <header>
     <img id="profile-pic" src="photo.png" alt="Profile Picture" style="width: 200px; height: 200px; border-radius: 50%; margin-right: 50px;">
     <div>
       <p>
@@ -76,7 +107,7 @@
       </p>
     </div>
   </header>
-  <nav>
+  <nav> -->
     <!-- <a href="#">Yuheng Kan's Academic Page</a> -->
    
   </nav>
